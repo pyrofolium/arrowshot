@@ -4,6 +4,21 @@ All notable changes to this project are documented here. Format: [Keep a Changel
 
 ## [Unreleased]
 
+## arrowshot [0.1.0] - 2026-10-19
+
+Forked from bigarrow 0.4.6 as a screenshot-only tool. Entries below this one are upstream's.
+
+### Added
+- `arrowshot annotate`: bake an arrow with a sign into an existing image (`--at`/`--rect` in image
+  pixels, `--scale` from the PNG's DPI, `--avoid` to keep a sign clear of an earlier one).
+- `arrowshot capture`: screenshot a window (without raising it), region or display, optionally
+  annotated in the same call.
+- The `arrowshot` skill for Claude Code and Codex.
+
+### Removed
+- The live on-screen overlay (`point`, `start`, `stop`, `front`, `elements`, `doctor`, `demo`,
+  `install-skill`), its scripts, docs and release workflows.
+
 ## [0.4.6] - 2026-10-12
 
 ### Added

@@ -1,0 +1,8 @@
+# Codex reads this optional file for its skill list; Claude Code ignores the agents/ folder.
+# https://learn.chatgpt.com/docs/build-skills
+interface:
+  display_name: "Arrowshot"
+  short_description: "Bake big arrows and labels into screenshots"
+  default_prompt: "Take a screenshot with an arrow pointing at the Save button"
+policy:
+  allow_implicit_invocation: true
