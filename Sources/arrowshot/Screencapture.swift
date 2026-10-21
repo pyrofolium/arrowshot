@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import BigArrowCore
 import BigArrowTargeting
@@ -61,3 +62,4 @@ enum WindowLookup {
         return CGWindowID(number)
     }
 }
+#endif

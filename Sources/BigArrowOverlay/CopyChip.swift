@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import BigArrowCore
 
@@ -82,3 +83,4 @@ struct CopyChip {
         NSColor(srgbRed: color.red, green: color.green, blue: color.blue, alpha: 1)
     }
 }
+#endif

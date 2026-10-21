@@ -1,3 +1,4 @@
+#if os(macOS)
 import ArgumentParser
 import BigArrowCore
 import BigArrowTargeting
@@ -73,3 +74,4 @@ struct CaptureResult: Codable {
     var ok = true
     let output: String
 }
+#endif

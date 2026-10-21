@@ -9,11 +9,15 @@ metadata:
 
 # arrowshot
 
-Needs arrowshot 0.1.0 or newer (`arrowshot --version`).
+Needs arrowshot 0.2.0 or newer (`arrowshot --version`).
 
 `arrowshot` draws the big-arrow-with-a-sign look straight into an image file. Nothing appears on
 screen, no app is raised, and only `capture` needs a permission (Screen Recording). One arrow per
 call; run it again on its own output for the next arrow.
+
+On Linux only `annotate` works: `capture` exits 2, so take the screenshot with
+`agent-browser screenshot`, browser-director or `gnome-screenshot`, then annotate it. Linux reads
+PNG only, and the sign's font is Nunito (or Ubuntu Sans) instead of SF Pro Rounded.
 
 ## The one pattern
 

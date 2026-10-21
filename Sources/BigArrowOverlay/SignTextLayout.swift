@@ -1,3 +1,4 @@
+#if os(macOS)
 import AppKit
 import BigArrowCore
 
@@ -91,3 +92,4 @@ struct SignTextLayout {
         }
     }
 }
+#endif

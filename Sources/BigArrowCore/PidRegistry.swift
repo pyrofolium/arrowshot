@@ -1,4 +1,8 @@
+#if canImport(Darwin)
 import Darwin
+#else
+import Glibc
+#endif
 import Foundation
 
 /// One live arrow, written to `$TMPDIR/bigarrow/<pid>.json` while it is shown.

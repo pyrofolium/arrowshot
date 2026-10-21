@@ -4,6 +4,15 @@ All notable changes to this project are documented here. Format: [Keep a Changel
 
 ## [Unreleased]
 
+## arrowshot [0.2.0] - 2026-10-21
+
+### Added
+- Linux builds (tested on Ubuntu 24.04, arm64): `annotate` works the same, rendered with Cairo and
+  Pango through small stand-ins for the Apple modules in `Sources/LinuxShims`; the upstream
+  geometry, layout and rendering build unchanged. Needs `libcairo2-dev` and `libpango1.0-dev`.
+  The sign uses Nunito when installed, else Ubuntu Sans; Linux reads PNG only.
+- On Linux `capture` exits 2 and says how to take the screenshot instead.
+
 ## arrowshot [0.1.0] - 2026-10-19
 
 Forked from bigarrow 0.4.6 as a screenshot-only tool. Entries below this one are upstream's.

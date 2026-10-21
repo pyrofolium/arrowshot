@@ -42,6 +42,18 @@ ln -sfn "$PWD/skill/arrowshot" ~/.agents/skills/arrowshot
 
 Requires macOS 14+ and Xcode 16+.
 
+### Linux
+
+`annotate` also builds on Linux (tested on Ubuntu 24.04, arm64); `capture` is macOS only.
+
+```bash
+sudo apt install libcairo2-dev libpango1.0-dev   # plus a Swift 6 toolchain, e.g. via swiftly
+swift build -c release
+```
+
+The sign's font is [Nunito](https://fonts.google.com/specimen/Nunito) when it is installed (the
+closest free match for SF Pro Rounded Heavy), else Ubuntu Sans. Linux reads PNG input only.
+
 ## Development
 
 ```bash
